@@ -22,7 +22,7 @@ We will setup airflow on docker in a dedicated compute instance. dbt is setup in
   bash ~/GitHub-Archive-Analysis/scripts/vm_setup.sh && \
   exec newgrp docker
   ```
-- Move the service account json file from local to the VM machine in `~/.google/credentials/` directory.  Make sure it is named as `google_credentials.json`  else the dags will fail!
+- Move the service account json file from local to the VM machine in `~/.google/credentials/` directory.  Make sure it is named as `gharchive-analysis.json`  else the dags will fail!
 
   - You can use [sftp](https://youtu.be/ae-CV2KfoN0?t=2442) to transfer the file.
 
