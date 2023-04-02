@@ -13,13 +13,13 @@ We will setup airflow on docker in a dedicated compute instance. dbt is setup in
 - Clone git repo
 
   ```bash
-  git clone https://github.com/kprakhar27/streamify.git && \
+  git clone https://github.com/kprakhar27/GitHub-Archive-Analysis.git && \
   cd streamify
   ```
 - Install anaconda, docker & docker-compose.
 
   ```bash
-  bash ~/streamify/scripts/vm_setup.sh && \
+  bash ~/GitHub-Archive-Analysis/scripts/vm_setup.sh && \
   exec newgrp docker
   ```
 - Move the service account json file from local to the VM machine in `~/.google/credentials/` directory.  Make sure it is named as `google_credentials.json`  else the dags will fail!
