@@ -18,7 +18,7 @@ default_args ={
 AIRFLOW_HOME = os.environ.get('AIRFLOW_HOME', '/opt/airflow')
 
 URL_PREFIX = 'https://data.gharchive.org/'
-URL = URL_PREFIX + '{{ execution_date.strftime(\'%Y-%m-%d-%H\') }}.json.gz'
+URL = URL_PREFIX + '{{ execution_date.strftime(\'%Y-%m-%d-%-H\') }}.json.gz'
 
 # URL = "https://data.gharchive.org/{{ execution_date.strftime(\'%Y-%m-%d-%-H\') }}.json.gz"
 
